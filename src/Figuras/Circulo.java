@@ -8,7 +8,10 @@ public class Circulo extends Figura{
 		// TODO Auto-generated constructor stub
 	}
 	
-	
+	/***
+	 * 
+	 * @param radio
+	 */
 	public Circulo(int radio) {
 		super();
 		this.nombre = "Circulo";
@@ -17,6 +20,9 @@ public class Circulo extends Figura{
 
 
 	@Override
+	/**
+	 * 
+	 */
 	public double area() {
 		double resultado = Math.PI * Math.pow(radio, 2);
 		return resultado;

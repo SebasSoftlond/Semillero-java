@@ -39,8 +39,17 @@ public class Persona {
 		this.edad = edad;
 	}
 	
+	public String saludar(String saludo, String actitud) {
+		String saludoDevuelta = "";
+		if(saludo.contains("buenas") && actitud.equals("positiva")) {
+			saludoDevuelta = "Buenas, como estas?";
+		}
+		return saludoDevuelta;
+	}
 	
-	
+	public void dead() {
+		System.out.println("me morí");
+	}
 	
 	
 }
